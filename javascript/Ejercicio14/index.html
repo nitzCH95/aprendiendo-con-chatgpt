@@ -1,0 +1,71 @@
+<!-- Ejercicio 14. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
+    <script defer src="index.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .aprobado {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .desaprobado {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Andy</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Rosmery</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Armando</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Brenda</td>
+                <td>08</td>
+            </tr>
+            <tr>
+                <td>William</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="margin: 12px 0px 12px 4px;">
+        <input id="minimumNote" style="width: 100px;" type="number" value="11">
+    </div>
+
+    <div style="text-align: center;">
+        <button id="verAprobados">
+            Ver aprobados
+        </button>
+    </div>
+</body>
+
+</html>

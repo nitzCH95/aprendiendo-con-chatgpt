@@ -1,0 +1,61 @@
+<!-- Ejercicio 16-18. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Agregar usuario</h1>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px; margin: 0px 8px;">
+        <div>
+            <label style="display: block;" for="stuName">Nombre de estudiante</label>
+            <input type="text" id="stuName" required name="stuName" placeholder="Nombre de estudiante">
+        </div>
+        <div>
+            <label style="display: block;" for="stuNote">Nota</label>
+            <input type="number" id="stuNote" required name="stuNote" placeholder="Nota del estudiante">
+        </div>
+        <div>
+            <button id="addStudent">Agregar</button>
+        </div>
+    </div>
+    <table id="myTable" style="margin-top: 24px; text-align: center;">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Nota</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div id="modal">
+        <div id="modalContent">
+            <div>
+                <label style="display: block;" for="stuUpdateName">Nombre de estudiante</label>
+                <input type="text" id="stuUpdateName" name="stuUpdateName" placeholder="Nombre de estudiante">
+            </div>
+            <div>
+                <label style="display: block;" for="stuUpdateNote">Nota</label>
+                <input type="number" id="stuUpdateNote" name="stuUpdateNote" placeholder="Nota del estudiante">
+            </div>
+            <div>
+                <button id="updateStudent">Actualizar</button>
+                <button id="cancelBtn">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
